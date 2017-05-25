@@ -1,6 +1,6 @@
-var express = require("express");
+var express = require('express');
+var config = require('./config')
 var app = express();
-var port = process.env.PORT || 8080;        // Set port to env-var or 8080
 var cors = require('cors');
 var compression = require('compression');
 
@@ -14,5 +14,5 @@ app.use(compression());
 // API routes
 app.use('/persons', personsRoutes);
 // Start the server
-app.listen(port);
-console.log("Server started on port: " + port);
+app.listen(config.port);
+console.log('Server started on port: ' + port);

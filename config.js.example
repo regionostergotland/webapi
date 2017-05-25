@@ -1,9 +1,9 @@
 let config = {};
 
+// config.port = process.env.PORT || 8080;
+
 // Database config
-
 config.db = {}
-
 config.db.username = 'grupp5';
 config.db.password = 'password123':
 config.db.table_name = 'patientData';
