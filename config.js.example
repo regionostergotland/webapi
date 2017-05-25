@@ -1,0 +1,13 @@
+let config = {};
+
+// Database config
+
+config.db = {}
+
+config.db.username = 'grupp5';
+config.db.password = 'password123':
+config.db.table_name = 'patientData';
+config.db.host = 'visualcare.sytes.net';
+config.db.dialect = 'mysql';
+
+module.exports = config;

@@ -1,0 +1,23 @@
+{
+  "name": "webapi-example",
+  "version": "1.0.0",
+  "description": "Simple example of a webapi with express in NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ida.liu.se:tddd96-grupp5/webapi-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.1",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.2"
+  }
+}
