@@ -1,5 +1,5 @@
 var express = require('express');
-var config = require('./config')
+var config = require('./config');
 var app = express();
 var cors = require('cors');
 var compression = require('compression');
