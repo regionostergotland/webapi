@@ -1,8 +1,9 @@
-express = require('express');
+var express = require('express');
 var router = express.Router();
 
 var SequelizeDB = require('./../db/sequelize.js');
 var parser = require("./../utils/dataParser.js");
+var xlsxReader = require('./../xlsx-reader.js')
 
 
 var db = new SequelizeDB();
@@ -38,6 +39,13 @@ router.get("/:id", function(req, res) {
 	console.log("Getting person in database with id: " + id);
 	db.getPersonJSON(id, function(error, result) {
 		if (error) throw error;
+		res.send(result);
+	});
+});
+
+router.get('/xls/', function(req, res){
+	// Start a asynchronous function
+	xlsxReader.createJSON(function(result){
 		res.send(result);
 	});
 });

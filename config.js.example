@@ -10,4 +10,21 @@ config.db.table_name = 'patientData';
 config.db.host = 'visualcare.sytes.net';
 config.db.dialect = 'mysql';
 
+// Xlsx Settings
+config.xlsx.filname = 'file.xls';
+config.xlsx.sheet_number = 1;
+config.xlsx.number_of_rows_until_data = 1;
+config.xlsx.map_excel_name_to_db = {
+  'startDate': 'Start Datum',
+  'startJob': 'KVÅ kod Start',
+  'startCode': 'Start verksamhetsenhet',
+  'stopDate': 'Slut Datum',
+  'stopJob': 'Kvå Kod Stop',
+  'stopCode': 'Slut verksamhetsenhet',
+  'svfType': 'SVF typ text',
+  'personNumber': 'Personnummer',
+};
+
+
+
 module.exports = config;
